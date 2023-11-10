@@ -32,7 +32,7 @@ function Header() {
             {menuList.map((aMenuLista) => { 
                 console.log(aMenuLista);
                 return (
-                    <HeaderMenu />
+                    <HeaderMenu name={aMenuLista.name} link={aMenuLista.link} />
                 );
             })}
             </div>
