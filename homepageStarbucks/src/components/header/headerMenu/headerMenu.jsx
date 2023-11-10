@@ -1,9 +1,9 @@
-import React from 'react'
 
-function HeaderMenu(name, link) {
+
+function HeaderMenu({name, link}) {
   return (
     <ul>
-    <li>{name}{link}</li>
+    <li>{name}</li>
     </ul>
   )
 }
