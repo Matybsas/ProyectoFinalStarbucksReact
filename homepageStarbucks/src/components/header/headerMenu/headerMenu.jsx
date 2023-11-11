@@ -1,10 +1,10 @@
+import "./headerMenu.css";
 
-
-function HeaderMenu({name, link}) {
+function HeaderMenu({name, link, customcss}) {
   return (
-    <ul>
-    <li>{name}</li>
-    </ul>
+    
+    <li className={customcss}>{name}</li>
+    
   )
 }
 
