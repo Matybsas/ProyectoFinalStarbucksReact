@@ -1,0 +1,27 @@
+.contenedorLocalizar{
+    width: 20%;
+    height: 90px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedorLocalizar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+
+}
+
+.contenedorLocalizar a:hover{
+    color: rgb(98, 96, 96);
+    
+}
+
+.IconoLocalizar{
+    height: 20px;
+    padding-right: 5px;
+}

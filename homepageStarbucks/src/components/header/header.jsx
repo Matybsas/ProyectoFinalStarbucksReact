@@ -1,43 +1,47 @@
 import HeaderMenu from "./headerMenu/headerMenu";
-import "./header.css";
+import HeaderLogo from "./headerLogo";
+import HeaderLocalizar from './headerLocalizar';
+import "./styles/header.css";
+
 const menuList = [
+  
   {
-    name: "Logo",
-    link: "logo",
-    customcss:"",
-  },
-  {
-    name: "MENU",
+    name: "MENÚ",
     link: "menu",
-    customcss:"",
+    customcss: "",
   },
   {
-    name: "CAFE",
+    name: "CAFÉ",
     link: "cafe",
-    customcss:"",
+    customcss: "",
   },
   {
-    name: "EXPERIENCIA",
+    name: "EXPERIENCIA STARBUCKS",
     link: "experiencia",
-    customcss:"",
+    customcss: "",
   },
-  {
-    name: "Localizador Tienda",
-    link: "localizador",
-    customcss:"header__item--right",
-  },
+  
 ];
 
 function Header() {
   return (
     <header>
-      <div className="wrapper">
-        <div className="header__container">
+      <HeaderLogo />
+       <div className="header__container">
           {menuList.map((aMenuLista, index) => {
-            return <HeaderMenu key={index} name={aMenuLista.name} link={aMenuLista.link} customcss={aMenuLista.customcss}/>;
+            return (
+              
+                <HeaderMenu
+                  key={index}
+                  name={aMenuLista.name}
+                  link={aMenuLista.link}
+                  customcss={aMenuLista.customcss}
+                />
+                           
+            );
           })}
         </div>
-      </div>
+      <HeaderLocalizar/>
     </header>
   );
 }

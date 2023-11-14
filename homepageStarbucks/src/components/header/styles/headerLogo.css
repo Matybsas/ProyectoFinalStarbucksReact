@@ -1,0 +1,14 @@
+
+.contenedorLogo{
+    width: 20%;
+    height: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+img{
+    height: 50px;
+}
