@@ -1,6 +1,6 @@
-import HeaderMenu from "./headerMenu/headerMenu";
-import HeaderLogo from "./headerLogo";
-import HeaderLocalizar from './headerLocalizar';
+import HeaderMenu from "./headerMenu.jsx";
+import HeaderLogo from "./headerLogo.jsx";
+import HeaderLocalizar from './headerLocalizar.jsx';
 import "./styles/header.css";
 
 const menuList = [
@@ -17,7 +17,7 @@ const menuList = [
   },
   {
     name: "EXPERIENCIA STARBUCKS",
-    link: "experiencia",
+    link: "experienciaStarbucks",
     customcss: "",
   },
   
