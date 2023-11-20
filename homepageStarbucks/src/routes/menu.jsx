@@ -1,24 +1,16 @@
-import ProductosMenu from "../components/productosMenu/productosMenu"
-
+import ProductosMenu from "../components/productosMenu/productosMenu";
 
 function MenuPage() {
   return (
     <div className="conteinerMenu">
-      <section>
-
-        <span>¡Disfrútalos!</span>
-        <h2>Conoce nuestras bebidas y alimentos de temporada</h2>
-        <hr />
-        <h3>Bebidas</h3>
-        <hr />        
-        <ProductosMenu
-
-        />
-
-
+      <section className="conteinerTituloMenu">
+        <span className="span">¡Disfrútalos!</span>
+        <h2 className="titulo">Conoce nuestras bebidas y alimentos de temporada</h2>
       </section>
+
+      <ProductosMenu />
     </div>
-  )
+  );
 }
 
-export default MenuPage
+export default MenuPage;

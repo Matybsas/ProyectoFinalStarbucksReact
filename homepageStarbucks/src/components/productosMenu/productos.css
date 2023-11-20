@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productos{
+    width: 33%;
+    height: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos img{
+    width: 87%;
+    height: auto;
+    background-color: rgb(32 57 51);
+    border: 8px solid rgb(32 57 51);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.productos img:hover{
+    border: 8px solid rgb(190, 222, 213);
+}
