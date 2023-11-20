@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/header";
+import Footer from "./components/footer/footer.jsx";
 import HomePage from "./routes/home.jsx";
 import CafePage from "./routes/cafe.jsx";
 import ExperienciaPage from "./routes/experienciaStarbucks.jsx";
@@ -23,8 +24,9 @@ function App() {
         <Route path="/stores" element={<StoresPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-
+        
       {/* TODO LO QUE ESTE POR FUERA DE <ROUTES> FUNCIONA COMO LAYOUT */}
+      <Footer/>
     </Router>
   );
 }
