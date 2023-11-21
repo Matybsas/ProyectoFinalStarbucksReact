@@ -1,31 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-.containerMenu{
-    width: 65%;
+.menuUno,
+.menuDos,
+.menuTres,
+.menuCuatro 
+{
+    width: 100%;
     height: auto;
-    background-color: green;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
+    cursor: pointer;
 }
-.menuUno{
-    width: 20%;
-    height: auto;
-    background-color: red;
+
+.menuUno p,
+.menuDos p,
+.menuTres p,
+.menuCuatro p 
+{
+    color: grey;
+    padding: 15px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
 }
-.menuDos{
-    width: 20%;
-    height: auto;
-    background-color: blueviolet;
-}
-.menuTres{
-    width: 20%;
-    height: auto;
-    background-color: yellow;
+.menuUno p:hover,
+.menuDos p:hover,
+.menuTres p:hover,
+.menuCuatro p:hover 
+{
+    color: rgb(0, 0, 0);
+    padding: 15px 5px;
 }

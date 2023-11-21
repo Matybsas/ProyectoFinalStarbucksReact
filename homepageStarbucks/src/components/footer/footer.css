@@ -1,9 +1,44 @@
 .contenedorFooterMenu{
     width: 100%;
     height: 100%;
+    margin-top: 40px;
+    padding-top: 40px;
+    box-shadow: 2px 2px 7px rgb(66, 66, 66);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+.afip{
+    max-width: 50%;
+    min-height: 100px;
+}
+
+.conteinerMenus{
+    width:68%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.conteinerMenuFooter{
+    max-width: 17%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.conteinerRedSocial {
+    width: 68%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteinerRedSocial hr{  
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+
 }
