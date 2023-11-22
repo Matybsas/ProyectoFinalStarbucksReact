@@ -1,6 +1,6 @@
 import "./footerRedesSociales.css";
 
-function FooterRedesSociales({ icono, link, name }) {
+function FooterRedesSociales({ icono, link }) {
   return (
     
     <div className="contenedorRedes redesSociales">

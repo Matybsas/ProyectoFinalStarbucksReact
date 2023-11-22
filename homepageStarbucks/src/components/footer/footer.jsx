@@ -205,7 +205,9 @@ function Footer() {
       </div>
 
       <div className="conteinerRedSocial">
-        <hr />
+        <div className="contenedorHr">
+          <hr />
+        </div>
         {listRedes.map((item, index) => {
           return (
             <FooterRedesSociales
@@ -213,6 +215,7 @@ function Footer() {
               link={item.link}
               icono={item.icono}
               custom={item.custom}
+              
             />
           );
         })}

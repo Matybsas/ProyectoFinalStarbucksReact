@@ -10,7 +10,7 @@
 
 .contenedorLocalizar a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bold;
     display: flex;
 
@@ -24,4 +24,21 @@
 .IconoLocalizar{
     height: 20px;
     padding-right: 5px;
+}
+
+.conteinerDarkLigth button{
+    margin-left: 30px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #036751;
+    box-shadow: 2px 2px 7px black;
+}
+.conteinerDarkLigth button:hover{
+    cursor: pointer;
+    background-color: #06b992;
+}
+
+.conteinerDarkLigth img{
+    height: 25px;
 }

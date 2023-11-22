@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
 ul li{

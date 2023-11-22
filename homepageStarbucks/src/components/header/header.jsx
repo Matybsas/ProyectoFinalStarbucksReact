@@ -20,6 +20,11 @@ const menuList = [
     link: "experienciaStarbucks",
     customcss: "",
   },
+  {
+    name: "ADMIN",
+    link: "tienda",
+    customcss: "",
+  },
   
 ];
 

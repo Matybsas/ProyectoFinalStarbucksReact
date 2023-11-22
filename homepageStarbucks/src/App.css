@@ -1,0 +1,37 @@
+body{
+    background-color: var(--body-color);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--title-color);
+}
+a,p{
+    color: var(--text-color);
+}
+hr{
+    color: var(--border-color);
+}
+
+:root,
+html[data-theme="light"]
+{
+    --title-color: #000000;
+    --text-color: #717070;
+    --main-color:#E3E3E3;
+    --body-color: #ffffff;
+    --border-color: #141414;
+    --title-Banners-Primary:#165413;
+    --title-Banners-Secundary: #212121;
+
+}
+
+:root,
+html[data-theme="dark"]
+{
+    --title-color: #fffefe;
+    --text-color: #d9d9d9;
+    --main-color:#e5e5e5;
+    --body-color: #232323;
+    --border-color: #ffffff;
+    --title-Banners-Primary:#165413;
+    --title-Banners-Secundary: #fbf8f8;
+}
