@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -25,4 +26,9 @@
 
 .productos img:hover{
     border: 8px solid var(--borde-producto-hover);
+}
+
+.productoTexto{
+    text-align: center;
+    color: var(--text-color);
 }

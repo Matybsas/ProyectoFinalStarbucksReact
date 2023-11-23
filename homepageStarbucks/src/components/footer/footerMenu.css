@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,12 @@
     flex-wrap: wrap;
     justify-content: start;
     cursor: pointer;
+}
+.menuUno h3,
+.menuDos h3,
+.menuTres h3,
+.menuCuatro h3 {
+    color:var(--menu-footer-title);
 }
 
 .menuUno p,

@@ -1,8 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .containerProductosMenu{
     width: 100%;
@@ -31,4 +33,5 @@
 .containerTitulos h3{
     font-size: 20px;
     padding: 20px 0;
+    color: var(--title-color);
 }

@@ -1,4 +1,5 @@
 import ProductosMenu from "../components/productosMenu/productosMenu";
+import "../routes/style/styles.css";
 
 function MenuPage() {
   return (

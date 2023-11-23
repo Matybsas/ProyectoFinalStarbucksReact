@@ -9,8 +9,9 @@ function HeaderLocalizar() {
   const {theme, setTheme} = useContext(ThemeContext);
   
   const handleClick=()=>{
-    setTheme(theme === "light" ? "dark" : "light");
-    console.log(`esto es:`, theme);
+    const newTheme =theme ==="light" ? "dark" : "light"
+    setTheme(newTheme );
+    localStorage.setItem("theme", newTheme);
   }
   return (
     <div className={`contenedorLocalizar ${theme}`}>

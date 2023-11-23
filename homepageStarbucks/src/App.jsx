@@ -22,9 +22,16 @@ import comidaDos from "../src/components/banners/image/comida2.png";
 import comidaTres from "../src/components/banners/image/comida3.png";
 import paraLlevarUno from "../src/components/banners/image/cafeGranos.png";
 import paraLlevarDos from "../src/components/banners/image/teSaquitos.png";
-
+{
+  /*
+   **como llamar al html[theme.dark] desde el boton
+   **como poner la variable de color en banners, ya que no esta en estilos css
+   **como hacer que los archivos de imagenes se almacenen para agregar el producto
+   */
+}
 export const ThemeContext = createContext(null);
 export const appContext = createContext(null);
+
 const initialState = {
   listaProductosUno: [
     {
@@ -84,28 +91,26 @@ const initialState = {
 };
 
 function reducer(state, action) {
+  const oldState = { ...state };
   switch (action.type) {
-
-    case "ADD_BEBIDAS":{
-      const oldState = state;
+    case "ADD_BEBIDAS":
       oldState.listaProductosUno.push(action.payload);
+      alert("Producto agregado correctamente");
       return oldState;
-      }
-      case "ADD_COMIDA":{
-        const oldState = state;
-        oldState.listaProductosDos.push(action.payload);
-        return oldState;
-        }
-        case "ADD_ENCASA":{
-          const oldState = state;
-          oldState.listaProductosTres.push(action.payload);
-          return oldState;
-          }
-    
-  
-    
-      case "CLEAR_PRODUCT":
-      default:
+
+    case "ADD_COMIDA":
+      oldState.listaProductosDos.push(action.payload);
+      alert("Producto agregado correctamente");
+      return oldState;
+
+    case "ADD_ENCASA":
+      oldState.listaProductosTres.push(action.payload);
+      alert("Producto agregado correctamente");
+      return oldState;
+
+    case "CLEAR_PRODUCT":
+    default:
+      alert("Error al cargar el producto");
       return state;
   }
 }

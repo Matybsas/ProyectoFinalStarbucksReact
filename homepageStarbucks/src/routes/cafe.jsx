@@ -1,8 +1,11 @@
+import "../routes/style/styles.css";
 import Titulo from "../components/titulos/titulo"
 import cafe1 from "../components/banners/image/cafeTaza.png"
 import cafe2 from "../components/banners/image/curvaDeTostado.jpg"
 import cafe3 from "../components/banners/image/cafetera.png"
 import TituloYTexto from "../components/tituloTexto/tituloYTexto"
+
+
 function CafePage() {
   return (
     <div className="conteinerCafe">
@@ -44,7 +47,7 @@ function CafePage() {
       <TituloYTexto
       texto={"Es por eso que nuestros magníficos baristas se enfocan en crear diariamente rituales escogiendo diferentes métodos de preparación para que sean nuestros clientes quienes se sorprenden. Así, de la mano de las explicaciones de nuestros expertos, no sólo cultivarán la curiosidad sino que podrán seleccionar el mejor método para su experiencia Starbucks."}
       />
-      <button>Conocé nuestros métodos</button>
+      <button className="buttonCafe">Conocé nuestros métodos</button>
       </section>
     </div>
   )

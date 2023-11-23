@@ -2,13 +2,6 @@ import React, {useContext} from "react";
 import { appContext } from "../../App";
 import Productos from "./productos";
 import "./productosMenu.css";
-{/*import cafeUno from "../banners/image/cafe1.png";
-import cafeDos from "../banners/image/cafe2.png";
-import cafeTres from "../banners/image/cafe3.png";
-import teUno from "../banners/image/te1.png";
-import teDos from "../banners/image/te2.png";
-import teTres from "../banners/image/te3.png";
-import calientes1 from "../banners/image/calientes1.png";*/}
 
 
 
