@@ -6,14 +6,14 @@ import { useContext } from "react";
 
 function HeaderLocalizar() {
   
-  const {dataTheme, setTheme} = useContext(ThemeContext);
+  const {theme, setTheme} = useContext(ThemeContext);
   
   const handleClick=()=>{
-    setTheme(dataTheme === "light" ? "dark" : "light");
-    console.log(`esto es:`, dataTheme);
+    setTheme(theme === "light" ? "dark" : "light");
+    console.log(`esto es:`, theme);
   }
   return (
-    <div className={`contenedorLocalizar ${dataTheme}`}>
+    <div className={`contenedorLocalizar ${theme}`}>
       <a href="#">
         <img className="IconoLocalizar" src={IconoLocalizar} alt="" />
         Localizar Tienda

@@ -17,7 +17,7 @@
 }
 
 .contenedorLocalizar a:hover{
-    color: rgb(98, 96, 96);
+    color: var(--hover-localizador);
     
 }
 
@@ -31,12 +31,12 @@
     padding: 5px 25px;
     border: none;
     border-radius: 50px;
-    background-color: #036751;
-    box-shadow: 2px 2px 7px black;
+    background-color: var(--button-fondo-dark-ligth);
+    box-shadow: 2px 2px 7px var(--button-shadow-dark-ligth);
 }
 .conteinerDarkLigth button:hover{
     cursor: pointer;
-    background-color: #06b992;
+    background-color: var(--button-hover-fondo-dark-ligth);
 }
 
 .conteinerDarkLigth img{

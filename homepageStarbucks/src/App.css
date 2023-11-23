@@ -1,18 +1,13 @@
 body{
     background-color: var(--body-color);
 }
-h1,h2,h3,h4,h5,h6{
-    color: var(--title-color);
-}
-a,p{
-    color: var(--text-color);
-}
+
 hr{
     color: var(--border-color);
 }
 
 :root,
-html[data-theme="light"]
+html[theme="light"]
 {
     --title-color: #000000;
     --text-color: #717070;
@@ -21,17 +16,72 @@ html[data-theme="light"]
     --border-color: #141414;
     --title-Banners-Primary:#165413;
     --title-Banners-Secundary: #212121;
-
+    --Banners-Title-Primario-Home: #ffffff;
+    --Banners-Text-Primario-Home: #ffffff;
+    --Banners-Title-Secundario-Home:#15754b;
+    --Banners-Text-Secundario-Home: #15754b;
+    --shadow-color:#6B6A6A;
+    --hover-localizador:#626060;
+    --button-fondo-dark-ligth:#036751;
+    --button-hover-fondo-dark-ligth:#06b992;
+    --button-shadow-dark-ligth:#000000;
+    --color-text-border-menu-hover: #164E16;
+    --menu-footer-text:#626060;
+    --menu-footer-text-hover:#000000;
+    --fondo-producto:#203933;
+    --borde-producto:#203933;
+    --borde-producto-hover:#BEDED5;
+    --title-menu-menu:#1e3933;
+    --fondo-form-admin:#1e3933;
+    --text-form-admin:#ffffff;
+    --shadow-form:#262626;
+    --borde-form-input:#82AE82;
+    --fondo-form-button:#9ABBB0;
+    --borde-form-button:#82AE82;
+    --shadow-form-button:#000000;
+    --fondo-form-button-hover:#3B674F;
+    --shadow-form-button-hover:#C5C4C4;
+    --color-form-button-hover:#ffffff;
+    --fondo-form-input-archivo:#68A385;
+    --borde-form-input-archivo:#68A385;
 }
 
 :root,
-html[data-theme="dark"]
+html[theme="dark"]
 {
-    --title-color: #fffefe;
-    --text-color: #d9d9d9;
-    --main-color:#e5e5e5;
-    --body-color: #232323;
-    --border-color: #ffffff;
+    --title-color: #ffffff;
+    --text-color: #e0e0e0;
+    --main-color:#E3E3E3;
+    --body-color: #1b1b1b;
+    --border-color: #141414;
     --title-Banners-Primary:#165413;
-    --title-Banners-Secundary: #fbf8f8;
+    --title-Banners-Secundary: #212121;
+    --Banners-Title-Primario-Home: #ffffff;
+    --Banners-Text-Primario-Home: #ffffff;
+    --Banners-Title-Secundario-Home:#15754b;
+    --Banners-Text-Secundario-Home: #15754b;
+    --shadow-color:#6B6A6A;
+    --hover-localizador:#626060;
+    --button-fondo-dark-ligth:#036751;
+    --button-hover-fondo-dark-ligth:#06b992;
+    --button-shadow-dark-ligth:#000000;
+    --color-text-border-menu-hover: #164E16;
+    --menu-footer-text:#626060;
+    --menu-footer-text-hover:#000000;
+    --fondo-producto:#203933;
+    --borde-producto:#203933;
+    --borde-producto-hover:#BEDED5;
+    --title-menu-menu:#1e3933;
+    --fondo-form-admin:#1e3933;
+    --text-form-admin:#ffffff;
+    --shadow-form:#262626;
+    --borde-form-input:#82AE82;
+    --fondo-form-button:#9ABBB0;
+    --borde-form-button:#82AE82;
+    --shadow-form-button:#000000;
+    --fondo-form-button-hover:#3B674F;
+    --shadow-form-button-hover:#C5C4C4;
+    --color-form-button-hover:#ffffff;
+    --fondo-form-input-archivo:#68A385;
+    --borde-form-input-archivo:#68A385;
 }

@@ -5,7 +5,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 2px 2px 7px rgb(107, 106, 106);
+    box-shadow: 2px 2px 7px var(--shadow-color);
 }
 
 

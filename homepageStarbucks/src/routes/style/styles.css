@@ -18,7 +18,7 @@
     width: 60%;
     padding-top: 30px;
     margin: 0 auto;
-    color: #1e3933;
+    color: var(--title-menu-menu);
     font-weight: bold;
 }
 .span{
@@ -110,9 +110,9 @@
     height: auto;
     padding: 30px 0;
     border-radius: 5px;
-    background-color: #1e3933;
-    color: white;
-    box-shadow: 2px 2px 7px rgb(38, 38, 38);
+    background-color: var(--fondo-form-admin);
+    color: var(--text-form-admin);
+    box-shadow: 2px 2px 7px var(--shadow-form);
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@
     text-align: center;
     font-size: 20px;
     margin: 20px 0;
-    border: 3px solid rgb(130, 174, 130);
+    border: 3px solid var(--borde-form-input);
     border-radius: 50px;
 }
 .conteinerFormulario button{
@@ -141,20 +141,20 @@
     font-weight: bold;
     margin: 30px 0;
     padding: 10px 0;
-    background-color: rgb(154, 187, 176);
-    border: 3px solid rgb(130, 174, 130);
+    background-color: var(--fondo-form-button);
+    border: 3px solid var(--borde-form-button);
     border-radius: 50px;
-    box-shadow: 2px 2px 7px black;
+    box-shadow: 2px 2px 7px var(--shadow-form-button);
 }
 #archivo{
     font-size: 15px;
-    border: 2px solid rgb(104, 163, 133);
+    border: 2px solid var(--borde-form-input-archivo);
     border-radius: 50px;
-    background-color: rgb(104, 163, 133);
+    background-color: var(--fondo-form-input-archivo);
 }
 .conteinerFormulario button:hover{
-    background-color: rgb(59, 103, 79);
-    color: white;
-    box-shadow: 2px 2px 7px rgb(197, 196, 196);
+    background-color: var(--fondo-form-button-hover);
+    color: var(--color-form-button-hover);
+    box-shadow: 2px 2px 7px var(--shadow-form-button-hover);
     cursor: pointer;
 }

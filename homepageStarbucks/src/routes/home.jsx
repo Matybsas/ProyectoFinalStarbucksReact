@@ -1,4 +1,5 @@
 import "./style/styles.css";
+import"../App.css";
 import Baners from "../components/banners/baners";
 import banner1 from "../components/banners/image/BANNER1.png";
 import banner2 from "../components/banners/image/foto2-starbucks.png";
@@ -12,7 +13,7 @@ function HomePage() {
         boton={false}
         isFlipped={false}
         colorFondo={"rgb(222 24 121)"}
-        colorLetra={"rgb(255 255 255)"}
+        colorLetra={"var(--Banners-Title-Primario-Home)"}
       />
         <br /><br />
       <Baners
@@ -22,7 +23,7 @@ function HomePage() {
         isFlipped={true}
         boton={true}
         colorFondo={"rgb(213 233 226)"}
-        colorLetra={"#15754b"}
+        colorLetra={"var(--Banners-Title-Secundario-Home)"}
       />
     </div>
   );

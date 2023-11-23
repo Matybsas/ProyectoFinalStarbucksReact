@@ -17,12 +17,12 @@
 .productos img{
     width: 87%;
     height: auto;
-    background-color: rgb(32 57 51);
-    border: 8px solid rgb(32 57 51);
+    background-color: var(--fondo-producto);
+    border: 8px solid var(--borde-producto);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .productos img:hover{
-    border: 8px solid rgb(190, 222, 213);
+    border: 8px solid var(--borde-producto-hover);
 }

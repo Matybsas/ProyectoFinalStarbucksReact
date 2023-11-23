@@ -9,14 +9,14 @@ ul li{
     list-style: none;
     font-style: italic;
     font-weight: bold;
-    border: 5px transparent green;
+    border: 5px transparent;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 ul li:hover:not(.logo, .header__item--right){
-    color: rgb(22, 78, 22);
-    border-bottom: 5px solid rgb(22, 78, 22);
+    color: var(--color-text-border-menu-hover);
+    border-bottom: 5px solid var(--color-text-border-menu-hover);
 }
 

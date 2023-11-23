@@ -111,11 +111,11 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [dataTheme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [appState, dispatch] = useReducer(reducer, initialState);
   return (
     <appContext.Provider value={{ appState, dispatch }}>
-      <ThemeContext.Provider value={{ dataTheme, setTheme }}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
         <Router>
           {/* TODO LO QUE ESTE POR FUERA DE <ROUTES> FUNCIONA COMO LAYOUT */}
           <Header />
