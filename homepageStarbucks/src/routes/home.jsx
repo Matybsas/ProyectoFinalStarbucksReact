@@ -14,6 +14,7 @@ function HomePage() {
         isFlipped={false}
         colorFondo={"rgb(222 24 121)"}
         colorLetra={"var(--Banners-Title-Primario-Home)"}
+        tamanioTitulo={"50"}
       />
         <br /><br />
       <Baners
@@ -24,6 +25,7 @@ function HomePage() {
         boton={true}
         colorFondo={"rgb(213 233 226)"}
         colorLetra={"var(--Banners-Title-Secundario-Home)"}
+        tamanioTitulo={"50"}
       />
     </div>
   );

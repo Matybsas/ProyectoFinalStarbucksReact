@@ -22,13 +22,6 @@ import comidaDos from "../src/components/banners/image/comida2.png";
 import comidaTres from "../src/components/banners/image/comida3.png";
 import paraLlevarUno from "../src/components/banners/image/cafeGranos.png";
 import paraLlevarDos from "../src/components/banners/image/teSaquitos.png";
-{
-  /*
-   **como llamar al html[theme.dark] desde el boton
-   **como poner la variable de color en banners, ya que no esta en estilos css
-   **como hacer que los archivos de imagenes se almacenen para agregar el producto
-   */
-}
 export const ThemeContext = createContext(null);
 export const appContext = createContext(null);
 
@@ -91,6 +84,8 @@ const initialState = {
 };
 
 function reducer(state, action) {
+
+
   const oldState = { ...state };
   switch (action.type) {
     case "ADD_BEBIDAS":
@@ -118,6 +113,8 @@ function reducer(state, action) {
 function App() {
   const [theme, setTheme] = useState("dark");
   const [appState, dispatch] = useReducer(reducer, initialState);
+  let html = document.querySelector("html");
+  html.setAttribute("data-theme", theme);
   return (
     <appContext.Provider value={{ appState, dispatch }}>
       <ThemeContext.Provider value={{ theme, setTheme }}>

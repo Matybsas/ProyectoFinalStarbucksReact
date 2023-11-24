@@ -43,6 +43,11 @@
     justify-content: center;
     align-items: center;
 }
+.tituloCafeH2{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+}
 
 .conteinerCafe section{
     width: 35%;
@@ -108,7 +113,7 @@
     height: auto;
     text-align: center;
     margin: 30px 0;
-    color:var(--title-color);
+color:var(--title-color);
 }
 .conteinerFormulario form{
     width: 40%;
@@ -130,8 +135,8 @@
     text-align: center;
 }
 
-.conteinerFormulario form input:not(#archivo){
-    width: 35%;
+.conteinerFormulario form input:not(#imagenProducto){
+    width: 40%;
     height: 40px;
     text-align: center;
     font-size: 20px;
@@ -140,8 +145,8 @@
     border-radius: 50px;
 }
 .conteinerFormulario button{
-    width: 35%;
-    height: auto;
+    width: 40%;
+    height: 40px;
     font-size: 17px;
     font-weight: bold;
     margin: 30px 0;
@@ -150,12 +155,17 @@
     border: 3px solid var(--borde-form-button);
     border-radius: 50px;
     box-shadow: 2px 2px 7px var(--shadow-form-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#archivo{
+#imagenProducto{
+    
     font-size: 15px;
     border: 2px solid var(--borde-form-input-archivo);
     border-radius: 50px;
     background-color: var(--fondo-form-input-archivo);
+    
 }
 .conteinerFormulario button:hover{
     background-color: var(--fondo-form-button-hover);

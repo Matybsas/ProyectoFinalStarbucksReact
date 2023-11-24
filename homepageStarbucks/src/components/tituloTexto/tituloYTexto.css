@@ -6,16 +6,13 @@
     
 }
 
-p{
+.parrafoCafe{
     font-size: 20px;
-    color: var(--text-color);
+color: var(--text-color)
     
 }
-h2{
-    font-size: 24px;
-    font-weight: bold;
+
+.tituloCafe {
     color: var(--title-color);
 }
-h3{
-    color: var(--title-color);
-}
+

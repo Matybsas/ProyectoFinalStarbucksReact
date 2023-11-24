@@ -7,7 +7,7 @@ hr{
 }
 
 :root,
-html[theme="light"]
+html[data-theme="light"]
 {
     --title-color: #000000;
     --text-color: #717070;
@@ -51,7 +51,7 @@ html[theme="light"]
 }
 
 :root,
-html[theme="dark"]
+html[data-theme="dark"]
 {
     --title-color: #ffffff;
     --text-color: #e0e0e0;

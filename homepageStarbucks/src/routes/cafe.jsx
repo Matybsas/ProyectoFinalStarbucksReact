@@ -25,7 +25,7 @@ function CafePage() {
       texto={"De cuerpo entero, un poco ahumado, con notas cítricas, con fuerte presencia de chocolate…el desafío que tenemos constantemente es que cada uno de nuestros clientes encuentre su mezcla favorita y a la vez, que explore nuestras amplias selecciones más singulares. "}
       texto2={"Para alcanzarlo nos abastecemos de los mejores granos de café arábicos siguiendo siempre estrictos principios éticos."}
       />
-     <h2>Nuestro tostado Starbucks</h2>
+     <h2 className="tituloCafeH2">Nuestro tostado Starbucks</h2>
      <TituloYTexto
       texto={"Cada café que ofrecemos exige un perfil de tostado único para crear una taza con el máximo aroma, acidez, cuerpo y sabor. Al trabajar en un delicado balance en calor, tiempo y arte, nuestros maestros en el tostado hacen resaltar estas únicas características de cada grano de café. "}
       />
@@ -38,7 +38,7 @@ function CafePage() {
       titulo3={"Oscuro"}
       texto3={"Los cafés con tostado oscuro presentan un cuerpo completo y sabores fuertes y robustos."}
       />
-       <h2>Descubre los métodos de preparación en Starbucks, ¿Cuál es el correcto para vos?</h2>
+       <h2 className="tituloCafeH2">Descubre los métodos de preparación en Starbucks, ¿Cuál es el correcto para vos?</h2>
        <TituloYTexto
       texto={"Desde el cultivo responsable hasta el tostado, cada detalle en la elaboración de manera artesanal es fundamental para poder disfrutar de una taza de café Starbucks. Y además de la esencia de los granos, sabemos que la forma en la que se prepara el café tiene un efecto sorprendente en el sabor de cada taza y define su cuerpo. "}
       />

@@ -5,6 +5,8 @@ import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
 import "./footer.css";
+import FooterDescriptionWeb from "./footerDescriptionWeb";
+
 const ListMenuUno = [
   {
     title: "Sobre nosotros",
@@ -141,7 +143,35 @@ const listRedes = [
     custom: "iconRedesSociales",
   },
 ];
-
+const ListDescriptionWeb=[
+  {
+    name:"Accesibilidad web",
+    link: "",
+    customDescription:"descripcionWeb",
+  },
+  {
+    name:"Aviso de privacidad",
+    link: "",
+    customDescription:"descripcionWeb",
+  },
+  {
+    name:"Condiciones de uso",
+    link: "",
+    customDescription:"descripcionWeb",
+  },
+  {
+    name:"Mapa del sitio",
+    link: "",
+    customDescription:"descripcionWebMapaSitio",
+  },
+]
+/**
+ * @Footer cuenta con varios componentes anidados a este 
+ * (FooterMenu el cual cuenta con 4 listas que deriban a diferentes partes de la web)
+ * (FooterRedesSociales el cual cuenta con 1 lista que  te llevan a las diferentes redes sociales de la web.)
+ * (FooterDescription cuenta con una lista que se encarga de brindar la informacion de la web )
+ * las listas se filtran a traves del metodo .map() para obtener cada uno de los datos que necesitamos.
+ */
 function Footer() {
   return (
     <div className="contenedorFooterMenu">
@@ -201,13 +231,16 @@ function Footer() {
             );
           })}
         </div>
+        <div className="contImgAfip">
         <img src={afip} className="afip" alt=""></img>
+        </div>
       </div>
 
       <div className="conteinerRedSocial">
         <div className="contenedorHr">
           <hr />
         </div>
+        <div className="conteinerLogoRedes">
         {listRedes.map((item, index) => {
           return (
             <FooterRedesSociales
@@ -219,7 +252,24 @@ function Footer() {
             />
           );
         })}
+        </div>
       </div>
+      <div className="conteinerDescriptionWeb">
+      {ListDescriptionWeb.map((item, index) => {
+          return (
+            <FooterDescriptionWeb
+              key={index}
+              name={item.name}
+              link={item.link}
+              customDescription={item.customDescription}
+              
+            />
+          );
+        })}
+      </div>
+      <div className="conteinerCopyright">
+        <p>Ⓒ 2023. Starbucks Cofee Company. Reservados todos los derechos</p>
+        </div>
     </div>
   );
 }
