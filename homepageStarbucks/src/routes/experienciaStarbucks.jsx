@@ -5,6 +5,13 @@ import experiencia1 from "../components/banners/image/experiencia1.png"
 import experiencia2 from "../components/banners/image/experiencia2.png"
 import experiencia3 from "../components/banners/image/experiencia3.png"
 
+/**
+ * 
+ * @ExperienciaPage la Seccion cuenta con varios componentes anidados uno de titulos el cual se utiliza para el titulo principal de la saccion.
+ * Tambien cuenta con tres componentes anidados mas llamados Baners el cual se utiliza para mostrar una imagen, titulo, texto y boton opcional.
+ * Para mas informacion de cada componente anidado revisar ese componente especifico.
+ */
+
 function ExperienciaPage() {
   return (
     <div className="conteinerExperiencia">

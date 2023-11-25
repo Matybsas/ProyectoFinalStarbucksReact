@@ -2,6 +2,13 @@ import { useContext, useState } from "react";
 import { appContext } from "../App";
 import "../routes/style/styles.css";
 
+/**
+ * 
+ * @TiendaPage Realizamos un formulario el cual consta con 2 input y un buton para cargar productos en el apartado de menu.
+ * ya que se mezclo mucho codigo decidi explicar parte por parte que es lo que se realizo.
+ */
+
+
 function TiendaPage() {
   {/*Creamos una variable y utilizamos useState para guardar su valor (texto) */}
   const [productName, setProductName] = useState("");
@@ -11,7 +18,9 @@ function TiendaPage() {
   const { dispatch } = useContext(appContext);
 
   {/*Creamos la funcion handleClick para que el momento de darle click al boton en la seccion add_bebidas nos carge la imagen y el nombre del producto*/}
-  const handleClick = () => {
+  {/*tambien aplicamos una funcion anonima para evitar que el button sea utilizado como submit*/}
+  const handleClick = (event) => {
+    event.preventDefault()
     const action = {
       type: "ADD_BEBIDAS",
       payload: { img: productImage, text: productName },
@@ -68,7 +77,7 @@ function TiendaPage() {
           required
         />
 
-        <button onClick={handleClick}>Cargar Producto</button>
+        <button onClick={(event)=>handleClick(event)}>Cargar Producto</button>
       </form>
     </div>
   );

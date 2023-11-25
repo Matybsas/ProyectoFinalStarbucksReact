@@ -5,6 +5,11 @@ import cafe2 from "../components/banners/image/curvaDeTostado.jpg"
 import cafe3 from "../components/banners/image/cafetera.png"
 import TituloYTexto from "../components/tituloTexto/tituloYTexto"
 
+/**
+ * @CafePage en esta seccion se han anidados 2 componentes uno el de Titulo , el cual consta del menu principal de las secciones. Otro el Titulo y texto los cuales constan con h3 y p y se pueden reutilizar 
+ * en cualquier parte de la web.
+ * 
+ */
 
 function CafePage() {
   return (
