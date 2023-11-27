@@ -111,7 +111,7 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [appState, dispatch] = useReducer(reducer, initialState);
   let html = document.querySelector("html");
   html.setAttribute("data-theme", theme);

@@ -20,6 +20,7 @@
 .contenedorImagen img{
     width: 100%;
     height: 100%;
+    
 }
 
 .contenedorTexto{
@@ -60,5 +61,27 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 765px){
+    .contenedorBanner{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedorImagen{
+        width: 100%;
+        height: auto;
+    }
+    .contenedorImagen img{
+        width: 100%;
+        height: auto;
 
+    }
+    .contenedorTexto{
+        width: 100%;
+        height: auto;
+    }
+}
 

@@ -1,8 +1,16 @@
 import "./styles/headerlocalizar.css";
-import IconoLocalizar from "./image/location-dot-solid.svg";
-import luna from "../../assets/luna.png";
+import luna from "../../assets/SolLuna.png";
 import { ThemeContext } from "../../App";
 import { useContext } from "react";
+
+{/**Se agrego iconos de FontAwesomeIcon en componentes Individuales */}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
+const iconoLocalizar=<FontAwesomeIcon icon={faLocationDot} />
+
+
+
 
 
 /**
@@ -23,7 +31,7 @@ function HeaderLocalizar() {
   return (
     <div className={`contenedorLocalizar ${theme}`}>
       <a href="#">
-        <img className="IconoLocalizar" src={IconoLocalizar} alt="" />
+        <div className="contIcono">{iconoLocalizar}</div>
         Localizar Tienda
       </a>
 
@@ -32,6 +40,8 @@ function HeaderLocalizar() {
           <img src={luna} alt="" />
         </button>
       </div>
+
+      
     </div>
   );
 }

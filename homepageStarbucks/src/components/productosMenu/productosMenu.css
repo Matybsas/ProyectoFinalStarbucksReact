@@ -35,3 +35,10 @@
     padding: 20px 0;
     color: var(--title-color);
 }
+@media (max-width: 768px){
+    .containerTitulos{
+        width: 90%;
+        height: auto;
+    }
+
+}

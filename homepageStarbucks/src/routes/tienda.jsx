@@ -68,14 +68,9 @@ function TiendaPage() {
           onChange={(event) => handleChange(event)}
           required
         />
-
-        <label htmlFor="imagenProducto">Ingresa la imagen del Producto:</label>
-        <input
-          type="file"
-          id="imagenProducto"
-          onChange={(event) => handleFileChange(event)}
-          required
-        />
+          
+        <label  htmlFor="imagenProducto">Ingresa la imagen del Producto:</label>
+        <input  type="file" id="imagenProducto" onChange={(event) => handleFileChange(event)} required />
 
         <button onClick={(event)=>handleClick(event)}>Cargar Producto</button>
       </form>

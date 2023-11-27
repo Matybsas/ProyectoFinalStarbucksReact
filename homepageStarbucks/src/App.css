@@ -48,6 +48,7 @@ html[data-theme="light"]
     --color-form-button-hover:#ffffff;
     --fondo-form-input-archivo:#68A385;
     --borde-form-input-archivo:#68A385;
+    --color-icono-hamburguesa:#1f1f1f;
 }
 
 :root,
@@ -92,4 +93,5 @@ html[data-theme="dark"]
     --color-form-button-hover:#ffffff;
     --fondo-form-input-archivo:#68A385;
     --borde-form-input-archivo:#68A385;
+    --color-icono-hamburguesa:#d8d6d6;
 }

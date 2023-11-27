@@ -8,6 +8,7 @@
 .productos{
     width: 33%;
     height: auto;
+    text-align: center;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -31,4 +32,12 @@
 .productoTexto{
     text-align: center;
     color: var(--text-color);
+}
+
+@media (max-width: 768px){
+    .productos{
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
 }

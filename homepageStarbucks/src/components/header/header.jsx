@@ -1,10 +1,12 @@
+import { useState } from "react";
 import HeaderMenu from "./headerMenu.jsx";
 import HeaderLogo from "./headerLogo.jsx";
-import HeaderLocalizar from './headerLocalizar.jsx';
+import HeaderLocalizar from "./headerLocalizar.jsx";
 import "./styles/header.css";
 
+
+
 const menuList = [
-  
   {
     name: "MENÚ",
     link: "menu",
@@ -25,7 +27,6 @@ const menuList = [
     link: "tienda",
     customcss: "",
   },
-  
 ];
 /**
  * @Header es un componente que cuenta con 3 componentes mas anidados, en el header tenemos el menu principal de la web
@@ -33,25 +34,41 @@ const menuList = [
  * (HeaderMenu, es un componente anidado que cuenta con una lista con 4 objetos y lo utilizamos para navegar por las distintas secciones de la web, detallado en la lista)
  * (HeaderLocalizar, es un componente anidado en el cual cuenta con una seccion donde encontramos un mapa de google con todos los comercios de starbucks y tambien cuenta con un boton para cambiar el tema de nuestra web "Dark"/"Light" )
  */
+//PRUEBA
+
+//FIN PRUEBA
 function Header() {
+  {/*Utilizamos useState para mostrar u ocultar el menu */}
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header>
+    
       <HeaderLogo />
-       <div className="header__container">
-          {menuList.map((aMenuLista, index) => {
-            return (
-              
-                <HeaderMenu
-                  key={index}
-                  name={aMenuLista.name}
-                  link={aMenuLista.link}
-                  customcss={aMenuLista.customcss}
-                />
-                           
-            );
-          })}
-        </div>
-      <HeaderLocalizar/>
+      
+      <div className="header__container">
+        <div className={`conteiner__menu ${isOpen && "open"}`}>
+        {menuList.map((aMenuLista, index) => {
+          return (
+            <HeaderMenu
+              key={index}
+              name={aMenuLista.name}
+              link={aMenuLista.link}
+              customcss={aMenuLista.customcss} />
+          );
+        })}
+      </div>
+      </div>
+      <div className="HeaderLocalizar">
+          <HeaderLocalizar />
+      </div>
+
+
+    {/*Utilizamos onClick mostrar u ocultar el menu cuando el usuario haga click en el menu hamburguesa */}
+    <div className={`nav_toggle ${isOpen && "open"}`} onClick={()=> setIsOpen(!isOpen)}>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
     </header>
   );
 }
