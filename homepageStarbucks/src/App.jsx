@@ -7,7 +7,7 @@ import HomePage from "./routes/home.jsx";
 import CafePage from "./routes/cafe.jsx";
 import ExperienciaPage from "./routes/experienciaStarbucks.jsx";
 import MenuPage from "./routes/menu.jsx";
-import StoresPage from "./routes/stores.jsx";
+import LocalizarTiendaPage from "./routes/localizarTienda.jsx";
 import TiendaPage from "./routes/tienda.jsx";
 import NotFoundPage from "./routes/notFound.jsx";
 import cafeUno from "../src/components/banners/image/cafe1.png";
@@ -129,7 +129,7 @@ function App() {
             <Route path="/cafe" element={<CafePage />} />
             <Route path="/experienciaStarbucks" element={<ExperienciaPage />} />
             <Route path="/menu" element={<MenuPage />} />
-            <Route path="/stores" element={<StoresPage />} />
+            <Route path="/localizarTienda" element={<LocalizarTiendaPage />} />
             <Route path="/tienda" element={<TiendaPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

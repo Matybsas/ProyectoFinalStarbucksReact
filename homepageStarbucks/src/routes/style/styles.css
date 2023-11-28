@@ -7,6 +7,13 @@
     justify-content: center;
     align-items: center;
 }
+.conteinerBanner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
 
 /* Routes Menu*/
 .conteinerMenu {
@@ -55,6 +62,7 @@
 .conteinerCafe section {
     width: 35%;
     height: auto;
+    margin-top: 30px;
 }
 
 .conteinerCafe img {
@@ -186,6 +194,13 @@
     box-shadow: 2px 2px 7px var(--shadow-form-button-hover);
     cursor: pointer;
 }
+/* Routes Localizar Tiendas*/
+.conteinerLocalizarTienda{
+    width: 100%;
+    height: auto;
+}
+
+
 
 /*NotFoundError404*/
 .containerError {
@@ -220,10 +235,18 @@
 }
 
 @media (max-width: 768px){
+    /* Routes Home*/
+    .conteinerBanner{
+        width: 100%;
+        height: auto;
+        margin-top: 95px;
+        display: flex;
+        justify-content: center;
+
+    }
     /* Routes Menu*/
     .conteinerTituloMenu{
         width: 90%;
-
         padding-top: 100px;
     }
     .span{
@@ -251,5 +274,9 @@
     .conteinerFormulario form{
         width: 90%;
         height: auto;
+    }
+    .conteinerFormulario form input{
+        width: 90% !important;
+        margin-top: 15px;
     }
 }

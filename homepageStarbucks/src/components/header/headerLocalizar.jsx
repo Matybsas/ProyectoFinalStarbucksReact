@@ -2,7 +2,7 @@ import "./styles/headerlocalizar.css";
 import luna from "../../assets/SolLuna.png";
 import { ThemeContext } from "../../App";
 import { useContext } from "react";
-
+import { NavLink } from "react-router-dom";
 {/**Se agrego iconos de FontAwesomeIcon en componentes Individuales */}
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -30,10 +30,10 @@ function HeaderLocalizar() {
   }
   return (
     <div className={`contenedorLocalizar ${theme}`}>
-      <a href="#">
+      <NavLink to='/localizarTienda'>
         <div className="contIcono">{iconoLocalizar}</div>
         Localizar Tienda
-      </a>
+        </NavLink>
 
       <div className="conteinerDarkLigth">
         <button onClick={handleClick}>

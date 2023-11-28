@@ -86,6 +86,7 @@
 .conteinerCopyright p{
     width: 90%;
     height: auto;
+    color: var(--text-color);
     text-align: center;
     display: flex;
     justify-self: center;

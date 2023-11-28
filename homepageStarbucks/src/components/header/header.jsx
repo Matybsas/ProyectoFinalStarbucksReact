@@ -34,17 +34,16 @@ const menuList = [
  * (HeaderMenu, es un componente anidado que cuenta con una lista con 4 objetos y lo utilizamos para navegar por las distintas secciones de la web, detallado en la lista)
  * (HeaderLocalizar, es un componente anidado en el cual cuenta con una seccion donde encontramos un mapa de google con todos los comercios de starbucks y tambien cuenta con un boton para cambiar el tema de nuestra web "Dark"/"Light" )
  */
-//PRUEBA
 
-//FIN PRUEBA
 function Header() {
   {/*Utilizamos useState para mostrar u ocultar el menu */}
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header>
-    
+      <div className="conteinerLogooo">
+
       <HeaderLogo />
-      
+      </div>
       <div className="header__container">
         <div className={`conteiner__menu ${isOpen && "open"}`}>
         {menuList.map((aMenuLista, index) => {
@@ -58,7 +57,7 @@ function Header() {
         })}
       </div>
       </div>
-      <div className="HeaderLocalizar">
+      <div className="headerLocalizar">
           <HeaderLocalizar />
       </div>
 

@@ -13,6 +13,7 @@ import banner2 from "../components/banners/image/foto2-starbucks.png";
 function HomePage() {
   return (
     <div className="contenedorHome">
+      <div className="conteinerBanner">
       <Baners
         imagen={banner1}
         titulo={"¡La magia llegó a nuestras tiendas! "}
@@ -23,6 +24,7 @@ function HomePage() {
         colorLetra={"var(--Banners-Title-Primario-Home)"}
         tamanioTitulo={"50"}
       />
+      </div>
         <br /><br />
       <Baners
         imagen={banner2}
