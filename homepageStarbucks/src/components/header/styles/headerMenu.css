@@ -10,18 +10,16 @@ nav ul li{
     list-style: none;
     font-style: italic;
     font-weight: bold;
+    padding: 30px 0;
     border: 5px transparent;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul li a:hover{
-    color: var(--color-text-border-menu-hover);
-     font-weight: bold;
-   
-    
-}
-nav ul li:hover:not(.logo){
+
+nav ul li :hover{
+    font-weight: bold;
+    padding: 30px 0;
     color: var(--color-text-border-menu-hover) ;
     border-bottom: 5px solid var(--color-text-border-menu-hover);
 }
@@ -36,13 +34,11 @@ nav ul li:hover:not(.logo){
         flex-direction: column;
         align-items: start;
     }
-    nav ul li a:hover{
+    nav ul li :hover{
         color: var(--color-text-border-menu-hover);
-         font-weight: bold;
-             
+        font-weight: bold;
+        border-bottom: 0px; 
     }
     
-    nav ul li:hover{
-        border-bottom: 0 !important;
-    }
+    
 }
