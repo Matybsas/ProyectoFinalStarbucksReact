@@ -18,6 +18,10 @@ Toda la web fue creada con react + vite y se trabajo en la reutilizacion de comp
 ![image](https://github.com/Matybsas/ProyectoFinalStarbucksReact/assets/126203934/d4ed716e-5ce2-43e5-834b-4236533f49ee)
 ![image](https://github.com/Matybsas/ProyectoFinalStarbucksReact/assets/126203934/b494bc5a-7f87-4ed8-9183-cb04855d01d4)
 ![image](https://github.com/Matybsas/ProyectoFinalStarbucksReact/assets/126203934/4f623389-b811-4aed-87b6-0a134881da12)
+![image](https://github.com/Matybsas/ProyectoFinalStarbucksReact/assets/126203934/b77e1618-c738-4df5-95a0-758789412830)
+![image](https://github.com/Matybsas/ProyectoFinalStarbucksReact/assets/126203934/99914c83-11eb-4752-a191-0d3df0b03028)
+
+
 
 
 
